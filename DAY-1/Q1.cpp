@@ -18,7 +18,7 @@ int main()
     }
 
     // Displaying the result
-    cout << "Sum of first " << n << " natural numbers is: " << sum;
+    cout << "Sum of first " << n << " natural numbers is: " << sum << endl;
 
     return 0;
 }
