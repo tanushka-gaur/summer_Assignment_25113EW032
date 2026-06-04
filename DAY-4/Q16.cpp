@@ -21,6 +21,7 @@ int main()
         sum = 0;
         temp = num;
 
+        // Check Armstrong number
         while (temp > 0)
         {
             currentdigit = temp % 10;
