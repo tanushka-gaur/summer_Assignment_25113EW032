@@ -7,6 +7,7 @@ int main()
 {
     int inputnum, original, currentDigit, Sum = 0;
 
+    // Take input from user
     cout << "Enter a number: ";
     cin >> inputnum;
 
@@ -21,6 +22,7 @@ int main()
         inputnum = inputnum / 10;
     }
 
+    //Display the result 
     if (Sum == original)
         cout << "Gicen number is Armstrong Number";
     else
