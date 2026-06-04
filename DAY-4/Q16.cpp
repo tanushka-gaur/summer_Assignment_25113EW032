@@ -14,7 +14,7 @@ int main()
     cout << "Enter ending number: ";
     cin >> end;
 
-    cout << "Armstrong numbers are: ";
+    cout << "Armstrong numbers in the range are: ";
 
     for (num = start; num <= end; num++)
     {
