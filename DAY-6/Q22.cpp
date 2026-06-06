@@ -1,4 +1,4 @@
- // Program to convert binary to decimal
+// Program to convert binary to decimal
 
 #include <iostream>
 using namespace std;
