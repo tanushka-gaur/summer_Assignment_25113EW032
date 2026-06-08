@@ -13,7 +13,7 @@ int sumOfDigits(int n)
     // Add last digit with remaining digits
     int remainder = n % 10;
     int newNum = n / 10;
- 
+
     return remainder + sumDigits(newNum);
 }
 
