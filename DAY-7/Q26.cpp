@@ -26,7 +26,7 @@ int main()
     cin >> num;
 
     // Display result 
-    cout << "Fibonacci term = " << fibonacci(n);
+    cout << "Fibonacci term = " << fibonacci(num);
 
     return 0;
 }
