@@ -15,7 +15,7 @@ bool isPalindrome(int num)
     int rev = 0, original;
 
     // Store original number for comparison
-    original = n;
+    original = num;
 
     // Reverse the number
     while (num > 0)
