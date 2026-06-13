@@ -12,6 +12,11 @@ int main()
     cout << "Enter a number: ";
     cin >> n;
 
+    if(n < 0)
+    {
+        cout<< "Enter only positive numbers" ;
+    }
+
     // Calculating factorial using loop
     for(int i = 1; i <= n; i++)
     {
