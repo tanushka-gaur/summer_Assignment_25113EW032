@@ -16,15 +16,17 @@ int main()
     {
         cout<< "Enter only positive numbers" ;
     }
-
-    // Calculating factorial using loop
-    for(int i = 1; i <= n; i++)
+    else
     {
+        // Calculating factorial using loop
+        for(int i = 1; i <= n; i++)
+        {
         factorial = factorial * i;
-    }
+        }
 
-    // Displaying factorial
-    cout << "Factorial of " << n << " is: " << factorial;
+        // Displaying factorial
+        cout << "Factorial of " << n << " is: " << factorial;
+    }     
 
     return 0;
 }
