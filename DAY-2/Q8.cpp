@@ -13,6 +13,12 @@ int main()
 
     original = num; // Store the original number
 
+    if (num < 0)
+    { 
+        cout << "enter positive numbers only";
+        return 0;
+    } 
+
     while (num > 0) {
         digit = num % 10;
         reverse = reverse * 10 + digit;
