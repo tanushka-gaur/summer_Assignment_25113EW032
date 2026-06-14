@@ -10,6 +10,7 @@ int main()
     // Taking input from user
     cout << "Enter a number: "; 
     cin >> num;
+    num = abs(num);
 
     while (num > 0) {
         digit = num % 10;   // Get last digit
