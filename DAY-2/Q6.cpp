@@ -11,7 +11,7 @@ int main()
     cout << "Enter a number: ";
     cin >> num;
 
-    while (num > 0) {
+    while (num != 0) {
         digit = num % 10;               // Get last digit
         reverse = reverse * 10 + digit; // reversing number
         num = num / 10;                 // Remove last digit
