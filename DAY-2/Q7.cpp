@@ -10,14 +10,20 @@ int main() {
     // Taking input from user
     cout << "Enter a number: ";
     cin >> num;
+    num = abs(num);
+    
+    if (num == 0) cout << "Product of the digits = 0 ";
 
-    while (num > 0) {
-        digit = num % 10;         // Get last digit
-        product = product * digit; // Multiply the digits
-        num = num / 10;           // Remove last digit
+    else 
+    {
+        while (num > 0)
+        {
+            digit = num % 10;         // Get last digit
+            product = product * digit; // Multiply the digits
+            num = num / 10;           // Remove last digit
+        }
+        
+        cout << " Product of the digits = " << product;
     }
-
-    cout << "Product of the digits = " << product;
-
     return 0;
 }
