@@ -5,31 +5,34 @@ using namespace std;
 
 int main() 
 {
-    int num,i,count= 0;
+    int num;
+    bool flag = true;
 
     // Take input number from the user
     cout << "Enter a number: ";
     cin >> num;
 
-    // Numbers less than or equal to 1 are not prime
-    if (num <= 1) 
+    // Numbers less than 2 are not prime
+    if (num < 2) 
     {
-        cout << num << " is not a Prime Number";
+        cout << "(Negative/Zero/One) These are not Prime Number";
+        return 0;
     } 
     else 
     {
         // Check divisibility of number
-        for (int i = 2; i < num; i++) 
+        for (int i = 2; i <= num/2 ; i++) 
         {
             if (num % i == 0) 
             {
-                count++;
+                flag = false;
+                break;
             }
         }
     }
 
     // If there is no other divisor except 1 and the number itself then given number is prime
-    if (count==0)
+    if (flag)
         cout << num << " is a Prime Number";
     else
         cout << num << " is not a Prime Number";
