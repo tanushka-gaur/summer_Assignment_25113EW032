@@ -1,4 +1,4 @@
-//Program to Find Frequency of an Element in an Array
+// Program to Find Frequency of an Element in an Array
 
 #include <iostream>
 using namespace std;
