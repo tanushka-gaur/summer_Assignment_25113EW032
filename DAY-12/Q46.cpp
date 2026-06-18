@@ -44,6 +44,12 @@ int main()
     cout << "Enter a number: ";
     cin >> num;
 
+    if (num < 0)
+    {
+        cout << "Negative numbers are not Armstrong Numbers";
+        return 0;
+    }
+
     if (isArmstrong(num))
         cout << num << " is an Armstrong Number";
     else
