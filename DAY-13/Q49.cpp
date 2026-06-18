@@ -1,0 +1,29 @@
+// Program to Input and Display Array Elements
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[100], n;
+
+    // Input size of array
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    // Input array elements
+    cout << "Enter array elements: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    // Display array elements
+    cout << "Array elements are: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
