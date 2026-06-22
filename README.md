@@ -1,9 +1,9 @@
 ## Summer Assignment – C++ Programming
 
-This repository contains my solutions to programming assignments completed as part of my learning journey. The problems cover core programming concepts, logic building, recursion, functions, number systems, and pattern printing.
+This repository contains my solutions to programming assignment completed as part of my learning journey. The problems cover core programming concepts, logic building, recursion, functions, number systems, and pattern printing.
 
 📚 Language: C++
-🎯 Focus: Problem Solving & Programming Fundamentals
+🎯 Focus: Logic building, Problem Solving & Programming Fundamentals
 
 # Problem list
 
