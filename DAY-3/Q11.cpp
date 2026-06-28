@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    int a, b;
+    int a, b, gcd;
 
     // Input two numbers
     cout << "Enter two numbers: ";
@@ -23,7 +23,7 @@ int main() {
     }
 
     // Display GCD
-    cout << "GCD = " << i;
+    cout << "GCD = " << gcd;
 
     return 0;
 }
