@@ -5,26 +5,26 @@ using namespace std;
 
 int main() 
 {
-    int a, b;
+    int n1, n2;
 
     cout << "Enter number 1 = ";
-    cin >> a;
+    cin >> n1;
 
     cout << "Enter number 2 = ";
-    cin >> b;
+    cin >> n2;
 
     int lcm;
 
-    for (int i = max(a, b); ; i++)
+    for (int i = max(n1, n2);; i++)
     {
-        if (i % a == 0 && i % b == 0)
+        if (i % n1 == 0 && i % n2 == 0)
         {
             lcm = i;
             break;
         }
     }
 
-    cout << "LCM of " << a << " and " << b << " is " << lcm << endl;
+    cout << "LCM of " << n1 << " and " << n2 << " is " << lcm << endl;
 
     return 0;
 }
