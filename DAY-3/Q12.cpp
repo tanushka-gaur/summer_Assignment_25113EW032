@@ -24,7 +24,7 @@ int main()
         }
     }
 
-    cout << "LCM of " << n1 << " and " << n2 << " is " << lcm << endl;
+    cout << "LCM of " << n1 << " and " << n2 << " => " << lcm << endl;
 
     return 0;
 }
