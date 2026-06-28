@@ -10,7 +10,7 @@ int main() {
     cout << "Enter two numbers: ";
     cin >> a >> b;
 
-    // Find GCD using Euclid's algorithm
+    // Find GCD
     int min = (a < b) ? a : b;
 
     for (int i = min; i >= 1; i--)
