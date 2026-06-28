@@ -1,3 +1,5 @@
+// program to Print prime numbers in a range
+
 #include <iostream>
 using namespace std;
 
@@ -24,7 +26,7 @@ int main()
             continue;
 
         // Check if the current number is divisible by any number
-        for (i = 2; i < num; i++)
+        for (i = 2; i <= num/2; i++)
         {
             if (num % i == 0)
             {
