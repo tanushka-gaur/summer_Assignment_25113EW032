@@ -11,14 +11,19 @@ int main() {
     cin >> a >> b;
 
     // Find GCD using Euclid's algorithm
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
+    int min = (a < b) ? a : b;
+
+    for (int i = min; i >= 1; i--)
+    {
+        if (a % i == 0 && b % i == 0)
+        {
+            gcd = i;
+            break;
+        }
     }
 
     // Display GCD
-    cout << "GCD = " << a;
+    cout << "GCD = " << i;
 
     return 0;
 }
