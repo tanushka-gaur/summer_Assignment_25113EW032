@@ -5,31 +5,26 @@ using namespace std;
 
 int main() 
 {
-    int a, b, x, y;
+    int a, b;
 
-    // Input two numbers
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
+    cout << "Enter number 1 = ";
+    cin >> a;
 
-    // Store original values
-    x = a;
-    y = b;
+    cout << "Enter number 2 = ";
+    cin >> b;
 
-    // Find GCD first
-    while (y != 0) 
+    int lcm;
+
+    for (int i = max(a, b); ; i++)
     {
-        int temp = y;
-        y = x % y;
-        x = temp;
+        if (i % a == 0 && i % b == 0)
+        {
+            lcm = i;
+            break;
+        }
     }
 
-    int gcd = x;
-
-    // Calculate LCM using formula
-    int lcm = (a * b) / gcd;
-
-    // Display LCM
-    cout << "LCM = " << lcm;
+    cout << "LCM of " << a << " and " << b << " is " << lcm << endl;
 
     return 0;
 }
