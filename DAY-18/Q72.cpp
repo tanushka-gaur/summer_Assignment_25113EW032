@@ -1,4 +1,4 @@
-// Program to Sort an Array in Descending Order
+// Program to Sort an Array in descending Order
 
 #include <iostream>
 using namespace std;
