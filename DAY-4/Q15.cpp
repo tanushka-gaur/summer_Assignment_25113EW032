@@ -1,32 +1,62 @@
-// Write a program to Check Armstrong number.
+// program to Check Armstrong number
 
 #include <iostream>
+#include <cmath>
 using namespace std;
+
+void check_arm(int num)
+{
+
+    if (num < 0)
+    {
+        cout << "Negative numbers cannot be Armstrong numbers\nTry again.\n";
+        return;
+    }
+
+    int sum = 0;
+    int num_digits = 0;
+    int digit;
+
+    int temp = num;
+
+    // While loop for counting numbers of digits 
+    while (temp != 0)
+    {
+        temp /= 10;
+        num_digits++;
+    }
+
+    temp = num;
+
+    // While loop for finding sum
+    while (temp != 0)
+    {
+        digit = temp % 10;
+        sum += pow(digit, num_digits);
+        temp /= 10;
+    }
+
+    if (sum == num)
+    {
+        cout << num << " is Armstrong Number\n";
+    }
+
+    else
+    {
+        cout << num << " is not an Armstrong Number\n";
+    }
+
+    return;
+}
 
 int main()
 {
-    int inputnum, original, currentDigit, Sum = 0;
+    int n;
 
-    // Take input from user
-    cout << "Enter a number: ";
-    cin >> inputnum;
+    cout << "ENTER NUMBER => ";
+    cin >> n;
 
-    original = inputnum;
-
-    while (inputnum > 0)
-    {
-        currentDigit = inputnum % 10;
-
-        Sum = Sum + (currentDigit * currentDigit * currentDigit);
-
-        inputnum = inputnum / 10;
-    }
-
-    //Display the result 
-    if (Sum == original)
-        cout << "Gicen number is Armstrong Number";
-    else
-        cout << "Given number is not an Armstrong Number";
+    check_arm(n);
 
     return 0;
 }
