@@ -24,12 +24,6 @@ int main()
     cout << "Enter the value of n = ";
     cin >> n;
 
-    if (n == 0)
-    {
-        cout << firstterm;
-        return 0;
-    }
-
     for (int i = 1; i <= n; i++)
     {
         newterm = firstterm + secondterm;
