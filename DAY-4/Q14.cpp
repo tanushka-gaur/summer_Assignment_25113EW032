@@ -38,7 +38,7 @@ int main()
         secondterm = newterm;
     }
     // Display the output
-    cout << "Nth Fibonacci term = " << firstterm;
+    cout << n << "th Fibonacci term = " << firstterm;
 
     return 0;
  
